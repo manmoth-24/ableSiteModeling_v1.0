@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>index.html</title>
+    </head>
+    <body>
+        <h1>このブックマークはサイトを自由自在にできます。</h1>
+        <p>↘パターン１（文字のみ変更）</p>
+        　　<a href="javascript:let allElements = document.querySelectorAll('*');allElements.forEach((element) =>{element.setAttribute('contenteditable','true');})">変更可能へ_by Manmoth-24</a>
+        <br><br><p>↘パターン２（文字とサイズ変更）</p>
+        　　<a href="javascript:(() => {  let allElements = document.querySelectorAll('*');  allElements.forEach(element => {    element.setAttribute('contenteditable', 'true');  });  let headElement = document.head || document.getElementsByTagName('head')[0];  let styleElement = document.createElement('style');  styleElement.innerHTML = '* { resize: both; }';  headElement.appendChild(styleElement);})();">変更可能へ（サイズ込み） _by Mantmoh-24</a>
+
+        <p>リンクをブックマークバーにドラッグすれば取り込めます</p>
+        <p>/以上です</p>
+        <br><br>
+        <h4>made with ChatGPT3.5..By OpenAI</h4>
+    </body>
+</html>
